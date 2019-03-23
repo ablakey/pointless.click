@@ -25,4 +25,4 @@ A  game where you try to visit every U.S. state once.
 
 A Modbus server running on an ESP8266
 
-{# embed url="https://github.com/ablakey/minibus" %}
+{% embed url="https://github.com/ablakey/minibus" %}

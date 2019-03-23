@@ -1,16 +1,5 @@
 ---
-description: Some description test.
+description: TODO
 ---
 
-# Initial page
-
-Foo
-
-
-
-`bar`
-
-```python
-import foo
-```
-
+# TODO

@@ -1,5 +1,3 @@
----
-description: TODO
----
+# Today's Pointless Click
 
-# TODO
+A collection of nonsense and hard-learned knowledge.

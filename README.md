@@ -1,7 +1,3 @@
----
-description: A commonplace book by Andrew Blakey
----
-
 # Overview
 
 This GitBook is a collection of assorted projects, links, and info assembled by [Andrew Blakey](https://github.com/ablakey).

@@ -28,10 +28,9 @@ A Modbus server running on an ESP8266
 
 ## Leaflet Simple Graticule
 
-A graticule, but for unprojected Cartesian spaces (flat Earth).
+A graticule, but for unprojected Cartesian spaces \(flat Earth\).
 
 [https://github.com/ablakey/Leaflet.SimpleGraticule](https://github.com/ablakey/Leaflet.SimpleGraticule)
-
 
 ## Periodic Table of GitHub
 
@@ -40,3 +39,4 @@ Because naming repositories is hard so let's pick element names!
 Unfortunately this one doesn't work too well on mobile.
 
 [https://ablakey.github.io/periodic/index.html](https://ablakey.github.io/periodic/index.html)
+

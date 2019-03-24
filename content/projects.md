@@ -10,8 +10,6 @@ description: >-
 
 A set of adapters to access ROS topics from within QGIS.
 
-{% embed url="https://vimeo.com/293539252" caption="" %}
-
 [https://github.com/locusrobotics/qgis\_ros](https://github.com/locusrobotics/qgis_ros)
 
 ## The State Machine

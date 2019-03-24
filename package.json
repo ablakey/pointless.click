@@ -1,0 +1,22 @@
+{
+  "name": "pointless.click",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ablakey/pointless.click.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ablakey/pointless.click/issues"
+  },
+  "homepage": "https://github.com/ablakey/pointless.click#readme",
+  "devDependencies": {
+    "gitbook-cli": "^2.3.2"
+  }
+}

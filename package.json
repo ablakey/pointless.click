@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "gitbook install && gitbook build",
+    "build": "gitbook install && gitbook build && cp CNAME _book/CNAME",
     "start": "gitbook serve"
   },
   "repository": {
@@ -19,5 +19,8 @@
   "homepage": "https://github.com/ablakey/pointless.click#readme",
   "devDependencies": {
     "gitbook-cli": "^2.3.2"
+  },
+  "dependencies": {
+    "gitbook-plugin-custom-favicon": "0.0.4"
   }
 }

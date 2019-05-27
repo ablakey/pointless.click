@@ -1,7 +1,7 @@
 # Ideas
 
 
-## Holmes on Homes Deck Building Deck Building Game.
+## Holmes on Homes Deck Building Deck Building Game
 
 The Holmes on Homes Deck Building Deck Building game is a card game where you build a deck in order to build a deck. It includes item cards like Deck Boards, Posts, Screws, tools like Drill, Saw, Day Labourer, Unreliable Contractor, and action cards like "Stolen Supplies", "Surprise Inspection", and "No No This Isn't Up To Code, Tear It All Down". Yes, the entire point of the game is for the triple-decker pun of a title.
 

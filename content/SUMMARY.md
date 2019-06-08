@@ -1,7 +1,8 @@
 # Table of contents
 
 * [Overview](README.md)
+* [Commands](commands.md)
 * [Projects](projects.md)
-* [Links](links.md)
 * [Ideas](ideas.md)
+* [Links](links.md)
 * [About](about.md)

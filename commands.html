@@ -224,6 +224,27 @@ git config --global push.default current
 <h3 id="django">Django</h3>
 <pre><code># Migrate to a specific migration.
 python manage devel migrate app_name migration_name
+</code></pre><h2 id="backups">Backups</h2>
+<h3 id="restic">Restic</h3>
+<p>Restic wants to dump files into a &quot;repo&quot; which I think is just going to be a file structure in your backup destination.</p>
+<p>This ends up in a segmented, encrypted Restic format. So the only way to get the data back is to use Restic and to remember the password.</p>
+<pre><code># Probably add to your .bashrc
+export B2_ACCOUNT_ID=&quot;&lt;MY_ACCOUNT_ID&gt;&quot;
+export B2_ACCOUNT_KEY=&quot;&lt;MY_SECRET_ACCOUNT_KEY&gt;&quot;
+
+# To initialize.
+restic -r b2:my-restic-bucket-name init
+
+# To upload a backup.
+restic -r b2:bucket-name backup ~/Downloads/file_to_backup.tgz
+
+# Or even better... mount it as a filesystem.
+sudo mkdir /mnt/restic
+sudo chown ablakey:ablakey /mnt/restic/
+restic -r /srv/restic-repo mount /mnt/restic
+
+# To restore from a backup.
+restic -r b2:bucket-name restore latest --target file_to_restore.tgz
 </code></pre>
                                 
                                 </section>
@@ -267,7 +288,7 @@ python manage devel migrate app_name migration_name
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Commands","level":"1.2","depth":1,"next":{"title":"Projects","level":"1.3","depth":1,"path":"projects.md","ref":"projects.md","articles":[]},"previous":{"title":"Overview","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","custom-favicon"],"root":"content/","styles":{"website":"overrides.css"},"pluginsConfig":{"favicon":"content/favicon.ico","custom-favicon":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Andrew Blakey","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Today's Pointless Click","language":"en","gitbook":"*"},"file":{"path":"commands.md","mtime":"2019-06-08T16:01:40.704Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-08T16:02:30.174Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Commands","level":"1.2","depth":1,"next":{"title":"Projects","level":"1.3","depth":1,"path":"projects.md","ref":"projects.md","articles":[]},"previous":{"title":"Overview","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","custom-favicon"],"root":"content/","styles":{"website":"overrides.css"},"pluginsConfig":{"favicon":"content/favicon.ico","custom-favicon":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Andrew Blakey","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Today's Pointless Click","language":"en","gitbook":"*"},"file":{"path":"commands.md","mtime":"2019-06-20T17:59:23.907Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-20T18:00:20.547Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

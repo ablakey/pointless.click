@@ -4,12 +4,12 @@ Andrew Blakey is a software developer who has been working in the industrial mob
 
 He works with:
 
+* TypeScript / JavaScript, Python, C#
+* Django + Django REST Framework
+* React, Redux, Immer, CSS-in-JS
+* AWS Lambda, ECS (Docker), RDS (Postgres), Elastic
 * [ROS](https://ros.org/) - the Robot Operating System
-* Python
-* TypeScript / JavaScript
-* C#
-* QGIS, ESRI Arc-All-The-Things
-* ENVI, ERDAS, Geomatica
+* QGIS, ESRI Arc-All-The-Things, ENVI, ERDAS, Geomatica
 
 E-Mail: [ablakey@gmail.com](mailto:ablakey@gmail.com)
 

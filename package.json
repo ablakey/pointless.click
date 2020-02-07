@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "gitbook install && gitbook build && cp CNAME _book/CNAME",
-    "start": "gitbook serve"
+    "start": "gitbook serve",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "repository": {
     "type": "git",
@@ -18,7 +20,8 @@
   },
   "homepage": "https://github.com/ablakey/pointless.click#readme",
   "devDependencies": {
-    "gitbook-cli": "^2.3.2"
+    "gitbook-cli": "^2.3.2",
+    "vuepress": "^1.3.0"
   },
   "dependencies": {
     "gitbook-plugin-custom-favicon": "0.0.4"

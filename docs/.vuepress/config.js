@@ -21,8 +21,9 @@ const metadata = fs.readdirSync(__dirname + "/../projects/").map(filename => {
       month,
       year
     };
-  } catch (e) {
-    console.error(e);
+  } catch {
+    console.error(`${filename} has invalid markdown frontmatter.`);
+    process.exit(1); // Don't allow partially valid builds.
   }
 });
 
@@ -42,7 +43,8 @@ const sidebarChildren = Object.entries(yearGroups)
     // Convert metadata entries into Vuepress themeConfig.sidebar.children format.
     return {
       title: year,
-      children: m.map(e => `/projects/${e.filename}`)
+      children: m.map(e => `/projects/${e.filename}`),
+      sidebarDepth: 0
     };
   })
   .sort((a, b) => b.title - a.title); // Reverse order the year.
@@ -58,7 +60,7 @@ module.exports = {
         title: "Projects",
         path: "/projects/",
         collapsable: false,
-        sidebarDepth: 2,
+        sidebarDepth: 1,
         children: sidebarChildren
       },
       "/about",

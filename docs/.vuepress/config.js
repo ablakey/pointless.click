@@ -58,7 +58,7 @@ module.exports = {
     sidebar: [
       {
         title: "Projects",
-        path: "/projects/",
+        path: "/projects",
         collapsable: false,
         sidebarDepth: 1,
         children: sidebarChildren

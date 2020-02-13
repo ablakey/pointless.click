@@ -1,27 +1,27 @@
-# Commands
+# Cheat Sheet
 
 Assorted stuff I use occasionally enough to need but not often enough to memorize. There are no secrets here.
-
 
 ## AWS
 
 ### Glacier
+
 ```
 # Look at status of a Glacier vault.
 aws --profile ablakey@gmail.com glacier describe-vault --account-id - --vault-name google_backups
 ```
 
-
-
 ## Ubuntu
 
 ### Fixing super slow Git and Curl, etc. because of IPv6
+
 ```
 # Add to /etc/ssh/ssh_config
 AddressFamily inet
 ```
 
 ### Chrome
+
 ```
 # patch remote debugging into executable.
 
@@ -32,6 +32,7 @@ sed -i 's@Exec=/usr/bin/google-chrome-stable@Exec=/usr/bin/google-chrome-stable 
 ```
 
 ## Git
+
 ```
 # Makes `git push` work more normally.
 git config --global push.default current
@@ -40,15 +41,16 @@ git config --global push.default current
 ## Web Dev
 
 ### Django
+
 ```
 # Migrate to a specific migration.
 python manage devel migrate app_name migration_name
 ```
 
-
 ## Backups
 
 ### Restic
+
 Restic wants to dump files into a "repo" which I think is just going to be a file structure in your backup destination.
 
 This ends up in a segmented, encrypted Restic format. So the only way to get the data back is to use Restic and to remember the password.

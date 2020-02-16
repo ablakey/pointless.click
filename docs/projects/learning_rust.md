@@ -13,17 +13,12 @@ _February 15, 2020_
 I've complained in the past about complexity in languages. I think Go is big on being a concise language with preferrably one way to do things.  Rust, so far, has been pretty good at this. But I ran into this case about automatic return values:
 
 ```rust
-fn main() {
-    let x = 5;
-
-    let y = {
-        let x = 3;
-        x + 1`
-    };
+fn foo() {
+    x + 1
 }
 ```
 
-`x + 1`  is the same as `return x + 1;`.  It's a slight bit surprising that Rust would have "for the sake of conciseness" syntax like this.
+`x + 1`  is the same as `return x + 1;`.  It's a bit surprising that Rust would have "for the sake of conciseness" syntax like this.
 
 My guess is that without it, some syntax will get _really_ messy.  Probably when defining arms of a `match` statement and such.
 

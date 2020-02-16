@@ -18,7 +18,7 @@ fn foo() {
 }
 ```
 
-`x + 1`  is the same as `return x + 1;`.  It's a bit surprising that Rust would have "for the sake of conciseness" syntax like this.
+In Rust if the final line of a function is an expression, the function will return the result of that expression. `x + 1`  is the same as `return x + 1;`.  It's a bit surprising that Rust would have "for the sake of conciseness" syntax like this.
 
 My guess is that without it, some syntax will get _really_ messy.  Probably when defining arms of a `match` statement and such.
 

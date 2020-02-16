@@ -1,7 +1,9 @@
 ---
-date: June 2018
+date: June 1 2018
 ---
 
 ## The State Machine
 
-A game where you try to visit every U.S. state once. Game: https://ablakey.github.io/state-machine/index.html
+A game where you try to visit every U.S. state once.
+
+<https://ablakey.github.io/state-machine/index.html>

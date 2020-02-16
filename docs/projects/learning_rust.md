@@ -1,5 +1,5 @@
 ---
-date: February 2020
+date: February 14 2020
 ---
 
 # Learning Rust
@@ -8,7 +8,7 @@ I've been learning Rust and want to share some notes on my discoveries.
 
 
 ## Syntax complexity
-_February 15, 2020_
+_February 14, 2020_
 
 I've complained in the past about complexity in languages. I think Go is big on being a concise language with preferrably one way to do things.  Rust, so far, has been pretty good at this. But I ran into this case about automatic return values:
 

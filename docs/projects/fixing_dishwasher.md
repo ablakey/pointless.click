@@ -1,10 +1,10 @@
 ---
-date: February 2020
+date: February 15 2020
 ---
 
 # Fixing My Dishwasher
 
-February 15, 2020
+_February 15, 2020_
 
 I noticed the drywall/paint peeling off the ceiling edge of my basement office and discovered it was quite wet. I immediately linked that to the kitchen being directly above and the dishwasher running.  Looking under the dishwasher I found a puddle.  After I pulled it out and got some better lighting, I ran it again and found a slow dripping coming from the underside. I had expected to find a loose drain or water supply hose but that wasn't the case.
 

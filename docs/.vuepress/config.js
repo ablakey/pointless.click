@@ -15,9 +15,10 @@ const metadata = fs.readdirSync(__dirname + "/../projects/").map(filename => {
 
   // Read frontmatter of each file, getting month, year.
   try {
-    const [month, year] = file.data.date.split(" ");
+    const [month, day, year] = file.data.date.split(" ");  // TODO: Should parse as a Date object instead.
     return {
       filename,
+      day,
       month,
       year
     };
@@ -29,7 +30,8 @@ const metadata = fs.readdirSync(__dirname + "/../projects/").map(filename => {
 
 const yearGroups = metadata
   .filter(m => m !== undefined) // Filter any markdown files that didn't have a date.
-  .sort((a, b) => getMonthNumber(a.month) - getMonthNumber(b.month)) // Sort by month.
+  .sort((a, b) => b.day - a.day) // Sort by day.
+  .sort((a, b) => getMonthNumber(b.month) - getMonthNumber(a.month)) // Sort by month.
   .reduce((acc, m) => {
     // Group into lists keyed by year number.
     const yearList = acc[m.year] || [];

@@ -1,7 +1,9 @@
 ---
-date: September 2017
+date: September 1 2017
 ---
 
 ## Minibus
 
-A Modbus server running on an ESP8266 Code: https://github.com/ablakey/minibus
+A Modbus server running on an ESP8266.
+
+<https://github.com/ablakey/minibus>

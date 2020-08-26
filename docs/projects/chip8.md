@@ -9,4 +9,4 @@ I wrote a Chip8 emulator in Rust to get familliar with the language and with emu
 
 https://github.com/ablakey/chip8
 
-![Chip8 Space Invaders](../assets/chip8.jpg)
+![Chip8 Space Invaders](../assets/chip8.gif)

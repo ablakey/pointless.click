@@ -65,9 +65,9 @@ module.exports = {
         sidebarDepth: 1,
         children: sidebarChildren
       },
+      "/learning",
       "/about",
       "/cheatsheet",
-      "/doc_templates",
     ]
   }
 };

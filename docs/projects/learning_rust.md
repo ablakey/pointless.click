@@ -41,3 +41,9 @@ This is why ternary operator doesn't need to exist. The if/else can just be used
 ```rust
 let x = if (true) {5} else {7};
 ```
+
+
+## A followup
+_July 2020_
+
+Spent a lot of time with rust writing a Chip8 emulator and half of a Game Boy emulator (so far). It's an incredibly powerful language. I need to write about it more.

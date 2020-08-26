@@ -40,7 +40,7 @@ const yearGroups = metadata
     return acc;
   }, {});
 
-const sidebarChildren = Object.entries(yearGroups)
+const projectsChildren = Object.entries(yearGroups)
   .map(([year, m]) => {
     // Convert metadata entries into Vuepress themeConfig.sidebar.children format.
     return {
@@ -63,9 +63,15 @@ module.exports = {
         path: "/projects",
         collapsable: false,
         sidebarDepth: 1,
-        children: sidebarChildren
+        children: projectsChildren
       },
-      "/learning",
+      {
+          title: "Experiments",
+          path: "/experiments",
+          sidebarDepth: 1,
+          collapsable: false,
+          children: ["experiments/promises.md"]
+      },
       "/about",
       "/cheatsheet",
     ]

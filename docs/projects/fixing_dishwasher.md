@@ -31,3 +31,9 @@ My main concern is that this epoxy will not stand up to a lot of expansion/contr
 Now I need to fix that soaked drywall before mold begins to form.
 
 Home ownership is fun!
+
+
+# Update
+_August 26, 2020_
+
+Still holding just fine. I was convinced that because of the kind of plastic, the epoxy wouldn't take. That's kind of true. It doesn't look like it's truly epoxied. It's kind of just plugging the hole. With enough screwing with it, I'm sure it would fail.

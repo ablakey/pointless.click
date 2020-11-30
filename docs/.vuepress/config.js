@@ -8,19 +8,19 @@ function getMonthNumber(monthName) {
 /**
  * Walk all project markdown files, get their date, and assemble sidebar metadata for Vuepress to create links.
  */
-const metadata = fs.readdirSync(__dirname + "/../projects/").map(filename => {
+const metadata = fs.readdirSync(__dirname + "/../projects/").map((filename) => {
   const file = matter(
     fs.readFileSync(__dirname + "/../projects/" + filename, "utf8")
   );
 
   // Read frontmatter of each file, getting month, year.
   try {
-    const [month, day, year] = file.data.date.split(" ");  // TODO: Should parse as a Date object instead.
+    const [month, day, year] = file.data.date.split(" "); // TODO: Should parse as a Date object instead.
     return {
       filename,
       day,
       month,
-      year
+      year,
     };
   } catch {
     console.error(`${filename} has invalid markdown frontmatter.`);
@@ -29,7 +29,7 @@ const metadata = fs.readdirSync(__dirname + "/../projects/").map(filename => {
 });
 
 const yearGroups = metadata
-  .filter(m => m !== undefined) // Filter any markdown files that didn't have a date.
+  .filter((m) => m !== undefined) // Filter any markdown files that didn't have a date.
   .sort((a, b) => b.day - a.day) // Sort by day.
   .sort((a, b) => getMonthNumber(b.month) - getMonthNumber(a.month)) // Sort by month.
   .reduce((acc, m) => {
@@ -45,8 +45,8 @@ const projectsChildren = Object.entries(yearGroups)
     // Convert metadata entries into Vuepress themeConfig.sidebar.children format.
     return {
       title: year,
-      children: m.map(e => `/projects/${e.filename}`),
-      sidebarDepth: 0
+      children: m.map((e) => `/projects/${e.filename}`),
+      sidebarDepth: 0,
     };
   })
   .sort((a, b) => b.title - a.title); // Reverse order the year.
@@ -59,21 +59,20 @@ module.exports = {
   themeConfig: {
     sidebar: [
       {
+        title: "Games",
+        path: "/games",
+        sidebarDepth: 0,
+        collapsable: false,
+        children: ["projects/lights_out.md", "projects/the_state_machine.md"],
+      },
+      {
         title: "Projects",
         path: "/projects",
         collapsable: false,
         sidebarDepth: 1,
-        children: projectsChildren
-      },
-      {
-          title: "Experiments",
-          path: "/experiments",
-          sidebarDepth: 1,
-          collapsable: false,
-          children: ["experiments/promises.md"]
+        children: projectsChildren,
       },
       "/about",
-      "/cheatsheet",
-    ]
-  }
+    ],
+  },
 };

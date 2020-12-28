@@ -2,7 +2,7 @@
 
 Andrew Blakey is a software developer who has been working in the industrial mobile robotics industry since 2013. Before that he completed a Bachelor's and Master's in Geography at the University of Waterloo.
 
-He develops complete software products with:
+He develops complete software products using:
 
 * TypeScript, Python, Rust, C#
 * Django, React, AWS, Postgres

@@ -63,7 +63,7 @@ module.exports = {
         path: "/games",
         sidebarDepth: 0,
         collapsable: false,
-        children: ["projects/lights_out.md", "projects/the_state_machine.md"],
+        children: ["projects/the_state_machine.md", "projects/lights_out.md"],
       },
       {
         title: "Projects",

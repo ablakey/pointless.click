@@ -11,4 +11,6 @@ He develops complete software products using:
 
 E-Mail: [ablakey@gmail.com](mailto:ablakey@gmail.com)
 
+Twitter: [@robogeographer](https://twitter.com/robogeographer)
+
 GitHub: [Andrew Blakey](https://github.com/ablakey)

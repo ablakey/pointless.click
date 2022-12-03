@@ -1,8 +1,9 @@
 ---
 layout: home
-title: "Today's Pointless Click"
+title: "Home"
 ---
 
-# Today's Pointless Click
+
+![Tetris on Gameboy Emulator](images/heroimages/hero-1.jpg)
 
 A blog about robotics, geography, programming, and parenting.

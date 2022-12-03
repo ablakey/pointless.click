@@ -130,7 +130,7 @@ module.exports = function (eleventyConfig) {
       layouts: "layouts",
     },
     passthroughFileCopy: true,
-    templateFormats: ["html", "njk", "md"],
+    templateFormats: ["html", "njk", "md", "gif", "jpg", "png"],
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: "njk",
   };

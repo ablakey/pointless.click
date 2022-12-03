@@ -1,13 +1,13 @@
-@import 'global.css';
-@import 'variable.css';
-@import 'prism-theme.css';
-@import 'typography.css';
-@import 'post-list.css';
-@import 'hero.css';
-@import 'header.css';
-@import 'footer.css';
-@import 'post.css';
-@import 'about.css';
+@import "global.css";
+@import "variable.css";
+@import "prism-theme.css";
+@import "typography.css";
+@import "post-list.css";
+@import "hero.css";
+@import "header.css";
+@import "footer.css";
+@import "post.css";
+@import "about.css";
 
 .layout-wrapper {
   display: grid;
@@ -17,7 +17,7 @@
 
 .main {
   display: flex;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   flex-direction: column;
   padding-left: 1rem;
   padding-right: 1rem;

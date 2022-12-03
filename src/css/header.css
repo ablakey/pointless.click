@@ -3,7 +3,7 @@
   width: 100%;
   text-transform: capitalize;
   text-transform: uppercase;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .header__content {
@@ -19,7 +19,7 @@
 }
 
 .site-title {
-  font-size: var(--text-xl);
+  font-size: 1.7rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }

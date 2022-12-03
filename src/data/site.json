@@ -1,11 +1,9 @@
 {
   "name": "Today's Pointless Click",
-  "description": "TODO123",
+  "description": "Personal Blog of Andrew Blakey",
   "url": "https://eleventyduo.netlify.app",
   "author": {
-    "name": "Author Name",
-    "email": "author@site.com",
-    "twitterHandle": "author_handle"
+    "name": "Andrew Blakey"
   },
   "defaultSocialImage": "/images/default-social-image.png",
   "headerLinks": [],

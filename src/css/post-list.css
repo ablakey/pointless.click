@@ -41,7 +41,7 @@
 
 .post-list__title {
   font-size: var(--text-2xl);
-  margin-top: 0.5rem;
+  margin-top: 0rem;
 }
 
 .post-list__title a {

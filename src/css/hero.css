@@ -13,16 +13,14 @@
 }
 
 .hero__social-links {
+  margin-top: 1rem;
+  width: 300px;
   display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-  /* margin-top: 2rem; */
+  justify-content: space-between;
   text-transform: uppercase;
 }
 
-.hero__social-links > li {
-  margin-right: 2rem;
-  margin-top: 1rem;
+.hero__social-links > a {
 }
 
 .hero__skip-link {

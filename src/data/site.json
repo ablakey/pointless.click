@@ -10,6 +10,11 @@
   "socialLinks": [],
   "footerLinks": [
     {
+      "text": "about",
+      "url": "/about",
+      "external": false
+    },
+    {
       "text": "GitHub",
       "url": "https://github.com/yinkakun/eleventy-duo",
       "external": true

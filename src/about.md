@@ -25,7 +25,7 @@ I love exploring new software and languages, but am already very comfortable wit
 * [ROS](https://ros.org/) - the Robot Operating System
 * QGIS, ESRI, ENVI, ERDAS, Geomatica
 
-Most of my time is enjoyed being a parent to two boys, which usually means getting into lots of mischief. When I'm not doing any of that, I'm likely on the piano, working on some construction projects (such as rebuilding an entire deck and patio), or writing software for fun.
+Most of my time is enjoyed being a parent to two boys, which usually means getting into lots of mischief. When I'm not doing any of that, I'm likely on the piano, working on some construction projects (such as rebuilding his deck and patio), or writing software for fun.
 
 E-Mail: [ablakey@gmail.com](mailto:ablakey@gmail.com)
 

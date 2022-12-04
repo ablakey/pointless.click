@@ -5,7 +5,7 @@ layout: base
 <header class="hero">
   <div class="hero-content">
     <div style="display: flex; flex-direction:column; align-items:center;">
-        <img src="images/heroimages/hero-1.jpg" style="height: 200px; width: 200px"/>
+        <img id="heroimage" src="" style="height: 200px; width: 200px"/>
         <h4 style="text-align:center; margin-top:1rem;">A blog about robotics, geography, programming, and parenting.</h4>
     </div>
 
@@ -29,11 +29,11 @@ layout: base
 </header>
 
 <section class="post-list__wrapper">
-  {# <h2 class="post-list__heading">Recent Posts</h2> #}
-
   {% set postslist = collections.posts | head(-5) %}
   {% include "posts-list.njk" %}
-
 </section>
-
-{# <a class="all-posts-link" href="{{ '/blog/' | url }}">All Posts</a> #}
+<script>
+    const max = {{heroImageCount}}
+    const n = Math.floor(Math.random() * max);
+    document.querySelector("#heroimage").src = `/images/heroimages/hero-${n}.jpg`;
+</script>

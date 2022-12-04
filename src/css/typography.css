@@ -11,17 +11,22 @@
   --text-6xl: 5rem;
 }
 
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("/fonts/plex.woff2") format("woff2");
+}
+
 body {
   font-size: var(--text-lg);
   line-height: 1.54;
   color: var(--color);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  font-feature-settings: 'liga', 'tnum', 'case', 'calt', 'zero', 'ss01', 'locl';
+  font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
   font-variant-ligatures: contextual;
   -webkit-overflow-scrolling: touch;
   -webkit-text-size-adjust: 100%;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 h1,

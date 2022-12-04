@@ -49,13 +49,13 @@ object {
 
 img,
 video {
-  max-width: 100%;
+  max-width: 400px;
   height: auto;
 }
 
 img {
   display: block;
-  max-width: 100%;
+  max-width: 400px;
 }
 
 hr {
@@ -146,10 +146,8 @@ h4 + p {
 
 iframe,
 audio,
-video,
-img {
+video {
   width: 100%;
-  max-width: 100%;
   margin-top: 1rem;
 }
 

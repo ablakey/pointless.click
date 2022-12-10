@@ -12,7 +12,7 @@ This doesn't fix any of the fundamental problems with Rospy as it still uses thr
 
 This work was co-developed by and is now maintained by a colleague.
 
-<https://github.com/locusrobotics/aiorospy>
+[Source Code](https://github.com/locusrobotics/aiorospy)
 
 
 # Minibus
@@ -20,7 +20,7 @@ This work was co-developed by and is now maintained by a colleague.
 
 I wrote a Modbus server for an ESP-8266 for fun and learning. This was done around the time I was working on writing adapters for Modbus + OPC/UA + ROS to make it easier for a robot fleet to talk with industrial systems.
 
-[Check it out here.](https://github.com/ablakey/minibus)
+[Source Code](https://github.com/ablakey/minibus)
 
 
 # The Periodic Table of GitHub
@@ -28,7 +28,7 @@ I wrote a Modbus server for an ESP-8266 for fun and learning. This was done arou
 
 Because naming repositories is hard so let's pick element names! Unfortunately this one doesn't work too well on mobile.
 
-[Check it out here.](https://ablakey.github.io/periodic/index.html)
+[View it Here](https://ablakey.github.io/periodic/index.html)
 
 
 # Leaflet Simple Graticule
@@ -36,4 +36,4 @@ Because naming repositories is hard so let's pick element names! Unfortunately t
 
 A graticule, but for unprojected Cartesian spaces.
 
-[Find it here.](https://github.com/ablakey/Leaflet.SimpleGraticule)
+[Source Code](https://github.com/ablakey/Leaflet.SimpleGraticule)

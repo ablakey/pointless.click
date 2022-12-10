@@ -5,7 +5,7 @@
 - [Chip8 Emulator](/projects/chip8/index)
 - [QGIS ROS](/projects/qgisros/index)
 - **The Shelf Of Interesting Items**
-- [Miniabus](/shelf/minibus/index)
+*Coming Soon*
 - **Other**
 - [Programming](/programming/index)
 - [Games](/games/index)

@@ -4,7 +4,7 @@
 
 # Today's Pointless Click
 
-> Robotics, Geography, Programming, and Parenting
+> Robotics | Geography | Programming | Parenting
 
 - by Andrew Blakey
 

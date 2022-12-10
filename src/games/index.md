@@ -1,3 +1,7 @@
+# Games
+
+I've written a few little games for fun. I have a bunch of others that are, naturally, in various stages of incompleteness.
+
 # The State Machine
 *June 1, 2018*
 
@@ -7,7 +11,6 @@ I wanted to make a game based on a pun. It would be a finite state machine based
 
 
 ![The State Machine](statemachine.png)
-
 
 # Lights Out!
 *November 29, 2020*

@@ -7,8 +7,8 @@
 - **The Shelf Of Interesting Items**
 - [Miniabus](/shelf/minibus/index)
 - **Other**
-- [Programming](/other/programming/index)
-- [Games](/other/games/index)
+- [Programming](/programming/index)
+- [Games](/games/index)
 
 
 - **Links**

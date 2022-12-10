@@ -16,7 +16,7 @@ I thrive in situations where I need to wear many hats, which is why I've done so
 
 For example, I was hired for a specific mission: *"we need to configure and monitor robot deployments without regular involvement from engineers."*  This was accomplished by interviewing the deployment and customer success staff to understand the workflows, challenges, and opportunities. With the insight gathered, I prototyped an application, wrote the front-end, back-end, database schema, validation, backup strategy, cloud deployment, CI/CD, user manuals, and service monitoring tooling.
 
-This process was not monolithic. The best way to build the right tool with start-up levels of resourcing is to ship it early and often to learn through its use what works, what is lacking, and what you don't yet know about a problem. A prototype was available within a few weeks and has seen hundreds of improvements over the years.
+This process was not monolithic. The best way to build the right tool with start-up levels of resourcing is to ship it early and often to learn what works, what doesn't, and what you don't yet know about a problem. A prototype was available within a few weeks and has seen hundreds of improvements over the years.
 
 Once our product and company matured, and our customer base grew by multiple orders of magnitude, I handed out my many hats to a team that I hired and manage today.
 

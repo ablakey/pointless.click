@@ -1,6 +1,6 @@
 - **Projects**
-- [Minibot](/projects/minibot/index)
 - [Cancel™](/projects/cancel/index)
+- [Minibot](/projects/minibot/index)
 - [Game Boy Emulator](/projects/gameboy/index)
 - [Chip8 Emulator](/projects/chip8/index)
 - [QGIS ROS](/projects/qgisros/index)

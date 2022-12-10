@@ -8,9 +8,5 @@
 
 - by Andrew Blakey
 
-[GitHub](https://github.com/docsifyjs/docsify/)
-[Get Started](#docsify)
+[Foo](/foo)
 
-<!-- background color -->
-
-![color](#f0f0f0)

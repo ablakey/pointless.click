@@ -13,14 +13,24 @@
     <div id="app"></div>
     <script>
       window.$docsify = {
+        name: "Today's Pointless Click",
         basePath: "src/",
         homepage: "home.md",
+        loadSidebar: true,
         coverpage: true,
-        onlyCover: false,
+        onlyCover: true,
+        maxLevel: 3,
+        subMaxLevel: 3,
+        search: {
+          depth: 3,
+          noData: "No results!",
+          placeholder: "Search...",
+        },
       };
     </script>
     <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-typescript.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
   </body>
 </html>

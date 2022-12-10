@@ -9,6 +9,5 @@
 - by Andrew Blakey
 
 [Projects](/projects/index)
-<!-- [Shelf](/shelf/index) -->
 [About](/about)
 

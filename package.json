@@ -1,0 +1,22 @@
+{
+  "name": "pointless.click",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "docsify serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ablakey/pointless.click.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ablakey/pointless.click/issues"
+  },
+  "homepage": "https://github.com/ablakey/pointless.click#readme",
+  "devDependencies": {
+    "docsify-cli": "^4.4.4"
+  }
+}

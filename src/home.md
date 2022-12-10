@@ -1,11 +1,5 @@
-# Homepage
+This is the home page.
 
-## Woot
-
-
-```ts
-type x = 123;
-if (x === 3) {
-    console.log('hello');
-}
-```
+<div>
+  <img src="src/assets/heroimages/hero-0.jpg"/>
+</div>

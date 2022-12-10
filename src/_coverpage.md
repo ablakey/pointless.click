@@ -1,12 +1,14 @@
 <!-- _coverpage.md -->
 
-![logo](_media/)
+![logo](/assets/cursor.png)
 
 # Today's Pointless Click
 
-> Things about robotics, geography, programming, and parenting
+> Robotics, Geography, Programming, and Parenting
 
 - by Andrew Blakey
 
-[Foo](/foo)
+[Projects](/projects/index)
+[Shelf](/shelf/index)
+[About](/about)
 

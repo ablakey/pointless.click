@@ -1,5 +1,3 @@
-<!-- _coverpage.md -->
-
 ![logo](/assets/cursor.png)
 
 # Today's Pointless Click

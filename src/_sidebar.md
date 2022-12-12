@@ -15,4 +15,5 @@
 
 [About](/about)
 [FAQ](/faq)
+[Random](/random)
 [GitHub](https://github.com/ablakey/)

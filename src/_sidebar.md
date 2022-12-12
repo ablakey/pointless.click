@@ -9,11 +9,10 @@
 - **Other**
 - [Programming](/programming/index)
 - [Games](/games/index)
+- [Random](/random)
+- [FAQ](/faq)
 
 
 - **Links**
-
 [About](/about)
-[FAQ](/faq)
-[Random](/random)
 [GitHub](https://github.com/ablakey/)

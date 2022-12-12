@@ -14,4 +14,5 @@
 - **Links**
 
 [About](/about)
+[FAQ](/faq)
 [GitHub](https://github.com/ablakey/)

@@ -6,6 +6,7 @@
 - [QGIS ROS](/projects/qgisros/index)
 - **The Shelf Of Interesting Items**
 *Coming Soon*
+
 - **Other**
 - [Programming](/programming/index)
 - [Games](/games/index)
@@ -14,5 +15,5 @@
 
 
 - **Links**
-[About](/about)
-[GitHub](https://github.com/ablakey/)
+- [About](/about)
+- [GitHub](https://github.com/ablakey/)

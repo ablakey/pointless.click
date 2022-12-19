@@ -20,3 +20,8 @@ A video game where something very nasty happens at work and the boss is looking 
 ### System 32 Roulette
 
 In high school my friends and I had a basement drinking game called "System 32 Roulette." We had a fresh Windows 98 machine and you had to pick a file inside c:/windows/system32/ by random and forcibly delete it then reboot the machine. If the computer booted up and you could successfully get back to that folder, everyone else had to take a drink. If not, you had to finish your drink and then reinstall Windows.
+
+
+### Soup of Theseus
+
+I have no idea. I just love the term.  Came from my Hacker News comment on Brunswick Stew.  Maybe there's a terrible video game idea for it.

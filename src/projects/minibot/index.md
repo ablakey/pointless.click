@@ -13,6 +13,16 @@ This is one of many kits owned by the FRC Team 7475 "Wired" in Ontario, donated 
 
 # Hardware
 
+## Capabilities
+
+Once assembled, the Romi Control Board has:
+
+- 3 programmable buttons
+- 3 programmable LEDs
+- 2 motors with encoders
+- an accelerometer
+
+
 ## Assembly
 
 While assembly can be fairly intuitive, the [Pololu Romi Chassis User's Guide](https://www.pololu.com/docs/0J68) is a great resource for verifying any assumptions being made. Be careful about where the instructions describe a differing options depending on what hardware you're mounting. In this case, we're mounting the **Romi 32U4 Control Board**, which changes some steps:
@@ -41,12 +51,22 @@ There are 5 areas to solder:
     - in order to remove the board later, you can squish the springs through the holes and pull them up with the board
     - the battery leads will be delicate when removed from the frame, so be careful
 
-
-# Images
+## Images
 
 ![Motors](bot-01.jpg)
 
 ![Motors](bot-02.jpg)
+
+
+# Software
+
+## Installing Raspberry Pi OS
+
+The `Raspberry Pi Imager` makes this completely painless.  It will:
+
+- Download the desired OS (Raspberry Pi OS Lite 64-bit)
+- Format and properly partition an SD Card then install the above OS
+- Allow you to set things such as the Wifi credentials, the local hostname for the device, and an ssh password
 
 
 # FAQ
@@ -64,3 +84,8 @@ Probably not, but I'm not 100% sure. The main issue is that they won't have a co
 ### How do I mount the Raspberry Pi camera and the illumination ring?
 
 I don't know yet.
+
+
+### The HDMI port is blocked by a motor!
+
+You can partially disassemble the robot, but think about what that means: any time you want a screen, you need to muck with your hardware.  A better option is to try to never require a screen. This can be accomplished by setting up Wifi and network settings when installing the OS via the `Raspberry Pi Imager`.  This way you can just `ssh` to the robot's computer from a PC on your network.

@@ -69,6 +69,13 @@ The `Raspberry Pi Imager` makes this completely painless.  It will:
 - Allow you to set things such as the Wifi credentials, the local hostname for the device, and an ssh password
 
 
+# Links
+
+- [Pololu Romi Arduino Library](https://github.com/pololu/romi-32u4-arduino-library)
+
+- [Pololu Pi Slave Library for Arduino](https://github.com/pololu/pololu-rpi-slave-arduino-library)
+
+
 # FAQ
 
 ### How is the Raspberry Pi powered?

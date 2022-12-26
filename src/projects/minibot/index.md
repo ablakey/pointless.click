@@ -69,6 +69,19 @@ The `Raspberry Pi Imager` makes this completely painless.  It will:
 - Allow you to set things such as the Wifi credentials, the local hostname for the device, and an ssh password
 
 
+## Arduino Follower (Slave) Library.
+
+?> Historically we call things in software/hardware a "slave" because they are designed to simply follow orders from a "master". Some might find it more modern to describe them as a "follower."
+
+In this case, the follower library is designed to expose all of the Romi 32U4 (an Arduino-compatible board) capabilities via I2C. This allows the attached Raspberry Pi to do all the work (ie. it's the "master" or "leader").  The Pi will tell it to do things, and the 32U4 will handle the low-level details of doing them.
+
+The library is found here: [https://github.com/pololu/pololu-rpi-slave-arduino-library](https://github.com/pololu/pololu-rpi-slave-arduino-library).
+
+
+## Reference Library
+
+For this robot, I'm keeping the code here: [Minibot](https://github.com/ablakey/minibot). Note that it isn't designed to work out of the box, but it should be pretty close. At the very least, it's a useful reference if you get stuck programming your own.
+
 # Links
 
 - [Pololu Romi Arduino Library](https://github.com/pololu/romi-32u4-arduino-library)

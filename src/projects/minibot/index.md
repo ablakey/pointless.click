@@ -60,16 +60,67 @@ There are 5 areas to solder:
 
 # Software
 
-## Installing Raspberry Pi OS
+## Raspberry Pi
+
+### Installing Raspberry Pi OS
 
 The `Raspberry Pi Imager` makes this completely painless.  It will:
 
 - Download the desired OS (Raspberry Pi OS Lite 64-bit)
 - Format and properly partition an SD Card then install the above OS
-- Allow you to set things such as the Wifi credentials, the local hostname for the device, and an ssh password
+- Allow you to set things such as the Wifi credentials, the local hostname for the device, and an ssh password.
 
+When using the Imager, make sure you use:
+- Pi OS Lite 32-bit
+- Set the hostname (eg. `minibot`)
+- Set the Wifi Credentials
+- Set a username and password
 
-## Arduino Follower (Slave) Library.
+?> You MUST use the 32-bit version of Pi OS  (other OSes might work, but they must be 32 bit). This can make some operations a bit slower, but there are currently no 64-bit drivers for the Pi Camera 2 that I could find.
+
+You'll pick the SD card that you've plugged into the computer. It might suggest it is completely wiping one or more partitions on this card. That's fine.
+
+Once the imaging is complete, you can remove the card and plug it into the Raspberry Pi.   Note that when you boot up the Pi for the first time, it can take 5-10 minutes before it responds to `ping` or `ssh`.
+
+### Connecting to the Raspberry Pi
+
+If you set the hostname and Wifi credentials correctly, you can address it on the same network with:
+
+`ping pihostname.local` (where you replace `pihostname` with the hostname you picked)
+
+?> `ping` is a command that sends a tiny packet of data over the network that requests a tiny responds. It's a way to way "hello!" and prove that your two computers can communicate.
+
+Once that works, you can `ssh` to the robot using:
+
+`ssh username@hostname.local`
+
+It will ask a few security-related questions which you can say `yes` to.  It will then ask for a password.
+
+### Installing OpenCV
+
+You now need to set up a few things to get the Camera working and OpenCV Installed.
+
+```bash
+sudo raspi-config                # Go to "Interface Options" and enable "Legacy Camera". You'll have to reboot after.
+sudo apt update                  # Update the list of available software to make sure you download the latest versions.
+sudo apt install python3-opencv  # Install OpenCV for Python 3.
+```
+
+You can test that OpenCV installed properly and can access the camera with `python3`:
+
+```python
+import cv2                  # Import the library.
+cap = cv2.VideoCapture(0)   # Open `/dev/video0` as a capture device.
+result, image = cap.read()  # Capture an image and return two values:
+                            # `result` is a boolean that will be `True` if image captured.
+                            # `image` will be an object of image data.
+image.size                  # This will be the size of image in bytes. If it's zero, something is wrong.
+
+```
+
+## Romi 32U4 (Arduino-like) Control Board
+
+### Arduino Follower (Slave) Library.
 
 ?> Historically we call things in software/hardware a "slave" because they are designed to simply follow orders from a "master". Some might find it more modern to describe them as a "follower."
 
@@ -78,7 +129,7 @@ In this case, the follower library is designed to expose all of the Romi 32U4 (a
 The library is found here: [https://github.com/pololu/pololu-rpi-slave-arduino-library](https://github.com/pololu/pololu-rpi-slave-arduino-library).
 
 
-## Reference Library
+### Reference Library
 
 For this robot, I'm keeping the code here: [Minibot](https://github.com/ablakey/minibot). Note that it isn't designed to work out of the box, but it should be pretty close. At the very least, it's a useful reference if you get stuck programming your own.
 
@@ -99,13 +150,13 @@ Note that there is no power regulation or safety circuits, so these pins MUST be
 
 ### Can I power the robot from both the batteries and the 5V USB cable?
 
-Probably not, but I'm not 100% sure. The main issue is that they won't have a common ground (look this up, it's important!) so there's no guarantee you won't short everything with a voltage overload.  If the answer is yes, it's because the boards were specifically designed to handle this. But I think it's unlikely.  Best not to risk it.
-
-### How do I mount the Raspberry Pi camera and the illumination ring?
-
-I don't know yet.
+I'm not sure how safe it is. But I've often powered the Raspberry Pi from USB while the robot itself is turned off.
 
 
-### The HDMI port is blocked by a motor!
+### The HDMI port is blocked by a motor. How do I use it?
 
 You can partially disassemble the robot, but think about what that means: any time you want a screen, you need to muck with your hardware.  A better option is to try to never require a screen. This can be accomplished by setting up Wifi and network settings when installing the OS via the `Raspberry Pi Imager`.  This way you can just `ssh` to the robot's computer from a PC on your network.
+
+### How do I develop on the Raspberry Pi?
+
+Raspberry Pis are comparatively slow. Very slow. You're best off doing as much development as possible elsewhere, and then running it on your Pi for compatibility and performance testing. This isn't always possible, however, as you might be doing work that requires the capabilities of the Pi, such as the camera, or the robot it is attached to. For managing code (that should all be in a repository such as GitHub!) you can just clone your code directly.  For editing code in a quicker development cycle, check out a tool such as the Remote Development plugin for VSCode.

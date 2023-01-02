@@ -6,21 +6,28 @@
 
 I'm building a Pololu Romi + Raspberry Pi that will do... I'm not quite sure what, yet.
 
-This is one of many kits owned by the FRC Team 7475 "Wired" in Ontario, donated by Locus Robotics.  This page will likely serve as some basic guidance (alongside the existing online documentation) and some lessons learned about the process.  I think we're going to try to do some basic vision work with the Raspberry Pi camera.
+This is one of many kits owned by a FIRST Robotics team in Canada, donated generously by a U.S. robotics company.  This page will likely serve as some basic guidance (alongside the existing online documentation) and some lessons learned about the process.  We're going to try to do some basic vision work with the Raspberry Pi camera.
 
 ![Robot in-progress](bot-00.jpg)
 
 
 # Hardware
 
+The hardware can be separated into three distinct groups:
+
+- The chassis and electrical/mechanical components (motors, encoders, batteries)
+- The Control Board
+- The Raspberry Pi
+
 ## Capabilities
 
 Once assembled, the Romi Control Board has:
 
-- 3 programmable buttons
-- 3 programmable LEDs
-- 2 motors with encoders
-- an accelerometer
+- 2 Motors with encoders
+- 1 Raspberry Pi Camera V2
+- 1 Accelerometer
+- 3 Programmable Buttons
+- 3 Programmable LEDs
 
 
 ## Assembly
@@ -36,7 +43,7 @@ While assembly can be fairly intuitive, the [Pololu Romi Chassis User's Guide](h
 
 As you solder each section, use a multimeter to verify you haven't shorted any of the pins to each other. Be sure to follow soldering best practices regarding temperature and methods. Dry joints on a small mobile robot will eventually wiggle loose and you'll get a very frustrating kind of problem to debug: randomly occurring, intermittent issues.
 
-There are 5 areas to solder:
+There are 5 groups of things to solder:
 
 1. The 6-pin socket connector strips for the wheel encoder/power supplies (
     - note there are two sets of holes, you want the one closest to the wheels
@@ -58,13 +65,17 @@ There are 5 areas to solder:
 ![Motors](bot-02.jpg)
 
 
+?> You might think the pins and stand-off for the motor encoder/power source are not plumb with the board. You're correct. This is part my lack of a steady hand, and part because it seems to just work out this way.  I saw a few images of people mounting the pins outwards in the other set of holes, but I opted to go with the examples shown in all of the Pololu tutorials and photos.
+
 # Software
+
+Software is broken up into two categories: everything that runs on the Raspberry Pi, and the code flashed to the Control Board.  The Raspberry Pi will be doing almost all the work, given it is a far more powerful computer.  The Control Board will be responsible for the execution of larger commands.  For example, the Pi will tell the Control Board "turn left" and the board will translate that command into the required electrical operations that send electricity through the motors in the correct direction.
 
 ## Raspberry Pi
 
 ### Installing Raspberry Pi OS
 
-The `Raspberry Pi Imager` makes this completely painless.  It will:
+The [Raspberry Pi Imager](https://www.raspberrypi.com/software/) makes this completely painless.  It will:
 
 - Download the desired OS (Raspberry Pi OS Lite 64-bit)
 - Format and properly partition an SD Card then install the above OS
@@ -129,15 +140,19 @@ In this case, the follower library is designed to expose all of the Romi 32U4 (a
 The library is found here: [https://github.com/pololu/pololu-rpi-slave-arduino-library](https://github.com/pololu/pololu-rpi-slave-arduino-library).
 
 
-### Reference Library
+# Reference Library
 
-For this robot, I'm keeping the code here: [Minibot](https://github.com/ablakey/minibot). Note that it isn't designed to work out of the box, but it should be pretty close. At the very least, it's a useful reference if you get stuck programming your own.
+I have maintained a GitHub repository of code I wrote for this project. Note that it is not designed to be plug-and-play, so you might have to tinker a bit. But it's probably a helpful reference:
+
+[https://github.com/ablakey/minibot](https://github.com/ablakey/minibot)
 
 # Links
 
 - [Pololu Romi Arduino Library](https://github.com/pololu/romi-32u4-arduino-library)
 
 - [Pololu Pi Slave Library for Arduino](https://github.com/pololu/pololu-rpi-slave-arduino-library)
+
+- [Raspberry Pi Imager and other software](https://www.raspberrypi.com/software/)
 
 
 # FAQ

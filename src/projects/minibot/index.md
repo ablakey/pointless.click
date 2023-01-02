@@ -127,6 +127,23 @@ image.size                  # This will be the size of image in bytes. If it's z
 
 ```
 
+### Installing Other Dependencies
+
+Note that I'm just globally installing Python dependencies rather than setting up a workspace/virtualenv.  It's fine for this case because we're just hacking and learning.
+
+?> You don't necessarily need everything listed here, but it won't hurt if you install everything.
+
+```bash
+# Git (for working with git repositories) and pip for installing Python dependencies.
+sudo apt install git python3-pip
+
+# Python dependencies we often use for vision and web hosting.
+sudo pip install imutils Flask
+
+# Dependencies for Rust development using OpenCV
+sudo apt install libopencv-dev clang libclang-dev
+```
+
 ## Romi 32U4 (Arduino-like) Control Board
 
 ### Arduino Follower (Slave) Library.

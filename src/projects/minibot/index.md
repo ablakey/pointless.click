@@ -1,8 +1,6 @@
 # Minibot
 
-*December 10, 2022*
-
-**This page will be updated regularly**
+*Created: December 10, 2022 | Updated: January 2, 2023*
 
 I'm building a Pololu Romi + Raspberry Pi that will do... I'm not quite sure what, yet.
 

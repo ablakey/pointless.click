@@ -127,6 +127,14 @@ image.size                  # This will be the size of image in bytes. If it's z
 
 ```
 
+### Installing Rust
+
+Generally, follow the instructions found here: https://www.rust-lang.org/tools/install
+
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
 ### Installing Other Dependencies
 
 Note that I'm just globally installing Python dependencies rather than setting up a workspace/virtualenv.  It's fine for this case because we're just hacking and learning.
@@ -171,6 +179,24 @@ I have maintained a GitHub repository of code I wrote for this project. Note tha
 - [Raspberry Pi Imager and other software](https://www.raspberrypi.com/software/)
 
 
+# Development Notes
+
+## General Architecture
+
+I am aiming for:
+
+1. a Python-based OpenCV pipeline to read the camera, identify some object, and return:
+    - a streamable camera feed, ideal for web consumption (be wary of resolution, framerate, compression)
+    - metadata about the identified object, such as presence, type, size, position in frame
+2. a Rust-based WebSocket server that provides information about the robot (CPU and RAM usage, sensor data, motor encoder data, etc.)
+    - also accepts commands from the client for driving the robot or changing runtime settings
+
+## Rust and OpenCV
+
+I couldn't get Rust to compile properly when trying to use OpenCV. After 10 minutes it would panic.  I tried cross-compiling, but the external dependency created a mess of things. I'll probably stick with using Python for the OpenCV components, and Rust for the rest.
+
+
+
 # FAQ
 
 ### How is the Raspberry Pi powered?
@@ -191,3 +217,7 @@ You can partially disassemble the robot, but think about what that means: any ti
 ### How do I develop on the Raspberry Pi?
 
 Raspberry Pis are comparatively slow. Very slow. You're best off doing as much development as possible elsewhere, and then running it on your Pi for compatibility and performance testing. This isn't always possible, however, as you might be doing work that requires the capabilities of the Pi, such as the camera, or the robot it is attached to. For managing code (that should all be in a repository such as GitHub!) you can just clone your code directly.  For editing code in a quicker development cycle, check out a tool such as the Remote Development plugin for VSCode.
+
+### Why is Rust used in this project?
+
+I hummed and hawed over this for a while.  The best introduction would be Python or Java (because it's already in-use by FIRST robotics programmers).  But I thought this was an opportunity to dip our toes into the Rust world, given that opens up a lot of new horizons and gives young programmers some familiarity with the language.

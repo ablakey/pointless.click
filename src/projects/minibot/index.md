@@ -8,7 +8,7 @@ I'm building a Pololu Romi + Raspberry Pi that will do... I'm not quite sure wha
 
 This is one of many kits owned by a FIRST Robotics team in Canada, donated generously by a U.S. robotics company.  This page will likely serve as some basic guidance (alongside the existing online documentation) and some lessons learned about the process.  We're going to try to do some basic vision work with the Raspberry Pi camera.
 
-![Robot in-progress](bot-00.jpg)
+![Robot in-progress](bot-03.jpg)
 
 
 # Hardware
@@ -145,6 +145,7 @@ The library is found here: [https://github.com/pololu/pololu-rpi-slave-arduino-l
 I have maintained a GitHub repository of code I wrote for this project. Note that it is not designed to be plug-and-play, so you might have to tinker a bit. But it's probably a helpful reference:
 
 [https://github.com/ablakey/minibot](https://github.com/ablakey/minibot)
+
 
 # Links
 
